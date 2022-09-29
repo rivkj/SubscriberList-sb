@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Subscriber List</title>
+    <meta name="viewport" http-equiv="Content-Type" content="width=device-width, initial-scale=1, shrink-to-fit=no; text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  </head>
+  <body class="px-md-5">
+    <h1><span class="d-block p-2 bg-dark text-white">Welcome to Our Awesome Site!</span></h1>
+    <h3>Subscribe to our List. Sign-up below!</h3>
+    <p>Please use the form below to sign up as a subscriber:</p>
+ <form action="#" th:action="@{/}" th:object="${subscriber}" method="post" class="d-inline-flex p-2">
+    <table>
+	<tr>
+            <td>First Name:</td>
+	    <td><input type="text" th:field="*{firstName}" placeholder="First name" class="ml-n5" /></td>
+	</tr>
+	<tr>
+	    <td>Last Name:</td>
+	    <td><input type="text" th:field="*{lastName}" placeholder="Last name" class="ml-n5"/></td>
+	</tr>
+	<tr>
+    	    <td>Username:</td>
+	    <td><input type="text" th:field="*{userName}" placeholder="Username" class="ml-n5" /></td>
+	</tr>
+	<tr>
+	    <td><button type="submit" class="mt-md-2">Submit Your Name</button></td>
+	</tr>
+    </table>
+</form>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  </body>
+</html>
